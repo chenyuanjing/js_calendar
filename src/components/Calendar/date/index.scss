@@ -1,0 +1,59 @@
+$main-color: rgb(117, 193, 196);
+
+.my-calendar-table {
+    width: 100%;
+    border-collapse: collapse;
+    thead {
+        border-bottom: 1px solid #ddd;
+    }
+    tr {
+        height: 38px;
+        td {
+            text-align: center;
+        }
+    }
+    .day {
+        &.rest-day {
+            color: #ccc;
+        }
+        &.current-day {
+            cursor: pointer;
+        }
+        &.current {
+            color: $main-color;
+            font-weight: bold;
+        }
+        &.selected {
+            background-color: $main-color;
+            color: #fff;
+        }
+    }
+}
+
+.control-area {
+    height: 30px;
+    border-bottom: 1px solid #ddd;
+    
+    .control-btn {
+        float: left;
+        display: block;
+        width: 30px;
+        height: 30px;
+        color: $main-color;
+        text-align: center;
+        line-height: 30px;
+        cursor: pointer;
+    }
+
+    .control-title-content {
+        float: left;
+        display: block;
+        width: 204px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        cursor: pointer;
+        color: $main-color;
+        font-weight: bold;
+    }
+}
